@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambay&family=Krona+One&family=Montserrat:wght@900&family=Poppins:wght@100;400&family=Prompt:wght@300;500&family=Roboto&display=swap");
+
+:root {
+  --bg-white: #f2f2f2;
+  --shadow: rgba(0, 0, 0, 0.445);
+  --font-color: rgb(88, 85, 85);
+  --font-color2: rgb(168, 166, 166);
+  --change: rgb(7, 7, 209);
+  --border: rgb(233, 233, 233);
+  --border2: rgb(129, 122, 122);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+body {
+  background-color: var(--bg-white);
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#todolist-app-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgb(238, 231, 231),
+      rgb(196, 196, 192),
+      var(--font-color2)
+    );
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--bg-white);
+  padding-left: 9px;
+  padding-right: 39px;
+  height: 3rem;
+  border: 0.1px solid var(--border);
+}
+
+.header h1 {
+  color: var(--font-color2);
+  display: flex;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.header i {
+  color: var(--font-color2);
+  padding-top: 13px;
+}
+
+.form {
+  background: var(--bg-white);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border: 0.1px solid var(--border);
+}
+
+.form #title {
+  background: var(--bg-white);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9px;
+  padding-right: 0;
+  border: 0.1px solid var(--border);
+  font-style: italic;
+}
+
+.form .add {
+  border: none;
+  width: 20%;
+  background: var(--bg-white);
+  padding-left: 80px;
+}
+
+.tasks-list {
+  background-color: var(--bg-white);
+  width: 100%;
+  border: 0.1px solid var(--border);
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1px solid var(--border);
+  height: 50px;
+  font-size: 18px;
+}
+
+.checkbox {
+  background: transparent;
+  width: 10%;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.text-area {
+  border: none;
+  background: transparent;
+  width: 80%;
+  padding-top: 13px;
+  margin-left: 10px;
+}
+
+.delete {
+  border: none;
+  background: transparent;
+  width: 10%;
+  padding-top: 13px;
+  font-size: 20px;
+}
+
+.removeAll {
+  background: var(--font-color2);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border: 0.1px solid var(--font-color2);
+  padding-top: 10px;
+  justify-content: center;
+  color: var(--shadow);
+  font-size: 20px;
+}

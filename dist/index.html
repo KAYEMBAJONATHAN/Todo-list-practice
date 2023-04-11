@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Pack</title>
+<script defer src="main.js"></script></head>
+<body>
+    <section id="todolist-app-section">
+        <div class="header">
+            <h1>Today's To Do</h1>
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
+        <form class="form">
+            <input autocomplete="off" type="text" id="title" class="inputs" placeholder="Added to your list..." />
+            <button type="submit" class="add">&#8617;
+            </button>
+        </form>
+        <div class="tasks-list">
+        </div>
+        <button class="removeAll">Clear all completed</button>
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
