@@ -75,8 +75,6 @@ For tracking linter errors locally you need to follow these steps:
 - For tracking the linter errors in CSS file run:
   > npx stylelint "**/*.{css,scss}"
 
-  - And For tracking the linter errors in JavaScript file run:
-  > npx eslint .
 
 ### Prerequisites
 
